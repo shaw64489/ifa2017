@@ -1,0 +1,2532 @@
+@charset "UTF-8";
+
+/* Lenovo event styles */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+
+/*variables*/
+
+
+/* lenovo colors */
+
+
+/*$lenovo-dark-blue:#3e8ddd;*/
+
+
+/* breaks new */
+
+
+/*1960px*/
+
+
+/*1360px*/
+
+
+/*1228px*/
+
+
+/*800*/
+
+
+/*$mobile: new-breakpoint(max-width 26.250em 10); 420px*/
+
+
+/*480px*/
+
+
+/*360px*/
+
+
+/*typography*/
+
+@font-face {
+    font-family: "lato-thin";
+    font-style: normal;
+    font-weight: 200;
+    src: url("/_ui/desktop/common/fonts/lato/LatoLatin-Thin.eot?#iefix") format("embedded-opentype"), url("/_ui/desktop/common/fonts/lato/LatoLatin-Thin.woff2") format("woff2"), url("/_ui/desktop/common/fonts/lato/LatoLatin-Thin.woff") format("woff"), url("/_ui/desktop/common/fonts/lato/LatoLatin-Thin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "lato-regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/_ui/desktop/common/fonts/lato/LatoLatin-Regular.eot?#iefix") format("embedded-opentype"), url("/_ui/desktop/common/fonts/lato/LatoLatin-Regular.woff2") format("woff2"), url("/_ui/desktop/common/fonts/lato/LatoLatin-Regular.woff") format("woff"), url("/_ui/desktop/common/fonts/lato/LatoLatin-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "lato-bold";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/_ui/desktop/common/fonts/lato/LatoLatin-Bold.eot?#iefix") format("embedded-opentype"), url("/_ui/desktop/common/fonts/lato/LatoLatin-Bold.woff2") format("woff2"), url("/_ui/desktop/common/fonts/lato/LatoLatin-Bold.woff") format("woff"), url("/_ui/desktop/common/fonts/lato/LatoLatin-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "lato-black";
+    font-style: normal;
+    font-weight: 900;
+    src: url("/_ui/desktop/common/fonts/lato/LatoLatin-Black.eot?#iefix") format("embedded-opentype"), url("/_ui/desktop/common/fonts/lato/LatoLatin-Black.woff2") format("woff2"), url("/_ui/desktop/common/fonts/lato/LatoLatin-Black.woff") format("woff"), url("/_ui/desktop/common/fonts/lato/LatoLatin-Black.ttf") format("truetype");
+}
+
+a.eventButton {
+    font-family: 'lato-bold', Helvetica, Arial, sans-serif;
+    font-size: 0.9em;
+    line-height: 1.0em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 1.0em 1.4em;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    background: rgba(0, 0, 0, 0.3);
+    transition: .2s;
+    margin: 0 0.8em 0.8em 0;
+}
+
+@media screen and (max-width: 30em) {
+    a.eventButton {
+        padding: 0.4em 0.8em;
+        margin: 0 0.4em 0.4em 0;
+    }
+}
+
+a.eventButton:hover {
+    color: #000;
+    background: white;
+}
+
+a.eventButtonBlack {
+    color: #000;
+    border: 1px solid #000;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+a.eventButtonBlack:hover {
+    color: #fff;
+    background: black;
+}
+
+a.eventModalButton {
+    font-family: 'lato-black', Helvetica, Arial, sans-serif;
+    /*smaller for localization*/
+    font-size: 0.8em;
+    line-height: 1.0em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 1.0em 1.4em;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    background: #fff;
+    transition: .2s;
+}
+
+@media screen and (max-width: 30em) {
+    a.eventModalButton {
+        padding: 0.4em 0.8em;
+    }
+}
+
+a.eventModalButton:hover {
+    color: #fff;
+    background: #000;
+}
+
+a.bannerVideo:before {
+    content: "";
+    text-decoration: none;
+    background: url("../ca/en/ww-mwc-2017-img-zip/event-play.png") no-repeat 0 0;
+    background-size: 16px 16px;
+    padding: 0.1em 1.8em 0.2em 0;
+    transition: .2s;
+}
+
+a.bannerVideo:hover:before {
+    content: "";
+    text-decoration: none;
+    background: url("../ca/en/ww-mwc-2017-img-zip/event-play-hover.png") no-repeat 0 0;
+    background-size: 16px 16px;
+    padding: 0.1em 1.8em 0.2em 0;
+}
+
+
+/*-------------------------------------------------------------------------------- pre-buzz */
+
+div.pre-buzz {
+    color: #fff;
+}
+
+div.pre-buzz-date h1 {
+    font-family: 'lato-black', Helvetica, Arial, sans-serif;
+    font-size: 4.0em;
+    line-height: 0.48em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+div.pre-buzz-date h1 span.black-hone-no-show {
+    color: #000;
+    display: none;
+}
+
+div.pre-buzz-date h1 span.black-hone {
+    color: #000;
+}
+
+div.pre-buzz-date h1 span.small-hone {
+    font-size: 0.55em;
+    line-height: 0.7em;
+    letter-spacing: 0.01em;
+}
+
+span.countdown_amount {
+    display: inline-block;
+    font-family: 'lato-black', Helvetica, Arial, sans-serif;
+    font-size: 4.4em;
+    letter-spacing: 0.01em;
+}
+
+
+/*-------------------------------------------------------------------------------- landing */
+
+body {
+    font-family: 'lato-regular', Helvetica, Arial, sans-serif;
+}
+
+div.event-nav ul.event-nav-links li a {
+    font-family: 'lato-bold', Helvetica, Arial, sans-serif;
+    font-size: 1.0em;
+    line-height: 1.0em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 0 0.8em;
+    padding: 0.5em 0.8em 0.3em 0.8em;
+    color: #6f7170;
+    text-decoration: none;
+    transition: .2s;
+}
+
+@media screen and (max-width: 50em) {
+    div.event-nav ul.event-nav-links li a {
+        font-size: 1.0em;
+        margin: 0;
+        padding: 0;
+        display: block;
+        width: 3.0em;
+        height: 4.0em;
+    }
+}
+
+div.event-nav ul.event-nav-links li a:hover {
+    color: #e2231a;
+}
+
+div.event-nav ul.event-nav-links li:first-child a {
+    font-family: 'lato-bold', Helvetica, Arial, sans-serif;
+    color: #000;
+}
+
+@media screen and (max-width: 50em) {
+    div.event-nav ul.event-nav-links li:first-child a {
+        background: url("https://static.lenovo.com/ww/events/IFA/ifa-2017-logo.svg") no-repeat center center;
+        background-size: 88px 38px;
+        width: 6.0em;
+        height: 4.0em;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    div.event-nav ul.event-nav-links li:nth-child(2) a {
+        background: url("../ca/en/ww-mwc-2017-img-zip/events-2017-mobile-nav-li-two.svg") no-repeat center center;
+        background-size: 38px 38px;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    div.event-nav ul.event-nav-links li:nth-child(3) a {
+        background: url("../ca/en/ww-mwc-2017-img-zip/events-2017-mobile-nav-li-three.svg") no-repeat center center;
+        background-size: 38px 38px;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    div.event-nav ul.event-nav-links li:nth-child(4) a {
+        background: url("../ca/en/ww-mwc-2017-img-zip/events-2017-mobile-nav-li-four.svg") no-repeat center center;
+        background-size: 38px 38px;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    div.event-nav ul.event-nav-links li a span {
+        visibility: hidden;
+    }
+}
+
+div.event-nav ul.event-nav-links li a span img {
+    height: 3.0em;
+    width: 9.13em;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 50em) {
+    div.event-nav ul.event-nav-links li a span img {
+        height: 1.277em;
+        width: 3.875em;
+        display: none;
+    }
+}
+
+div.event-yt-player-wrapper div.banner-txt h1 {
+    font-family: 'lato-black', Helvetica, Arial, sans-serif;
+    font-size: 4.8em;
+    line-height: 1.0em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+@media screen and (max-width: 76.75em) {
+    div.event-yt-player-wrapper div.banner-txt h1 {
+        font-size: 3.8em;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    div.event-yt-player-wrapper div.banner-txt h1 {
+        font-size: 2.4em;
+    }
+}
+
+div.event-yt-player-wrapper div.banner-txt p {
+    font-family: 'lato-regular', Helvetica, Arial, sans-serif;
+    font-size: 1.4em;
+    line-height: 1.3em;
+    letter-spacing: 0.05em;
+    margin: 0 0 0.6em 0;
+    padding: 0;
+    color: #fff;
+}
+
+div.event-product-row div.event-product-row-copy h2 {
+    font-family: 'lato-black', Helvetica, Arial, sans-serif;
+    font-size: 2.4em;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0;
+    margin: 0 0 0.3em 0;
+    text-align: left;
+}
+
+@media screen and (max-width: 30em) {
+    div.event-product-row div.event-product-row-copy h2 {
+        font-size: 1.4em;
+    }
+}
+
+div.event-product-row div.event-product-row-copy h2.event-lowercase {
+    text-transform: lowercase;
+    font-size: 3.2em;
+}
+
+@media screen and (max-width: 30em) {
+    div.event-product-row div.event-product-row-copy h2.event-lowercase {
+        font-size: 2.2em;
+    }
+}
+
+div.event-product-row div.event-product-row-copy h2.event-lowercase span {
+    color: #fadf03;
+}
+
+div.event-product-row div.event-product-row-copy p {
+    font-family: 'lato-regular', Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 0.00em;
+    color: #fff;
+    padding: 0;
+    margin: 0 0 1.6em 0;
+    text-align: left;
+}
+
+@media screen and (max-width: 30em) {
+    div.event-product-row div.event-product-row-copy p {
+        font-size: 1.0em;
+        margin: 0 0 0.8em 0;
+    }
+}
+
+div.event-product-row div.second-tier-copy p {
+    text-align: center;
+    font-family: 'lato-bold', Helvetica, Arial, sans-serif;
+    color: #555;
+}
+
+div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-copy p.event-modal-product-name {
+    font-family: 'lato-black', Helvetica, Arial, sans-serif;
+    font-size: 2.0em;
+    letter-spacing: 0.03em;
+    padding: 0;
+    margin: 0 0 0.6em 0;
+}
+
+@media screen and (max-width: 50em) {
+    div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-copy p.event-modal-product-name {
+        font-size: 1.2em;
+        margin: 0 0 0.3em 0;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-copy p.event-modal-product-name {
+        font-size: 1.1em;
+        margin: 0 0 0.3em 0;
+    }
+}
+
+div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-copy p {
+    line-height: 1.4em;
+    padding: 0;
+    margin: 0 0 2.4em 0;
+    /*smaller size for localization*/
+    font-size: 0.9em;
+}
+
+@media screen and (max-width: 50em) {
+    div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-copy p {
+        margin: 0 0 1.4em 0;
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-copy p {
+        margin: 0 0 1.2em 0;
+        font-size: 0.8em;
+    }
+}
+
+div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-copy p sup {
+    line-height: 0.1em;
+}
+
+p.event-mini-header {
+    font-family: 'lato-bold', Helvetica, Arial, sans-serif;
+    font-size: 0.9em;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0.3em 0;
+}
+
+p.event-mini-header-stackla {
+    margin: 0.3em 0 1.3em 0;
+}
+
+.black-copy {
+    color: #000 !important;
+}
+
+
+/* Landing */
+
+body {
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+div.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+
+/*--------------------------------------------------------------------- big wrappers */
+
+div.event-page-wrapper {
+    max-width: 120em;
+    margin: 0 auto;
+}
+
+div.event-nav-wrapper {
+    width: 100%;
+    max-width: 120.0em;
+    z-index: 30;
+    position: fixed;
+    top: 0;
+    background: #fff;
+}
+
+@media screen and (max-width: 50em) {
+    div.event-nav-wrapper {
+        background: #fff;
+    }
+}
+
+
+/*--------------------------------------------------------------------- event nav */
+
+div.event-nav div.nav-logo {
+    float: left;
+    background: #e2231a;
+    width: 6.25em;
+    height: 6.25em;
+    text-align: center;
+}
+
+@media screen and (max-width: 50em) {
+    div.event-nav div.nav-logo {
+        width: 4.0em;
+        height: 4.0em;
+    }
+}
+
+div.event-nav div.nav-logo a img {
+    max-height: 3.125em;
+    margin: 1.5625em 0 0 0;
+}
+
+@media screen and (max-width: 50em) {
+    div.event-nav div.nav-logo a img {
+        max-height: 2.0em;
+        margin: 1.0em 0 0 0;
+    }
+}
+
+div.event-nav ul.event-nav-links {
+    float: left;
+    list-style: none;
+    margin: 1.6em 0 0 1.6em;
+    padding: 0;
+}
+
+@media screen and (max-width: 50em) {
+    div.event-nav ul.event-nav-links {
+        margin: 0 0 0 42%;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    div.event-nav ul.event-nav-links {
+        margin: 0 0 0 38%;
+    }
+}
+
+div.event-nav ul.event-nav-links li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 50em) {
+    div.event-nav ul.event-nav-links li {
+        display: none;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    div.event-nav ul.event-nav-links li:first-child {
+        display: block;
+    }
+}
+
+
+/*--------------------------------------------------------------------- event nav mobile ANIMATION NEW */
+
+#event-mobile-nav-trigger {
+    width: 60px;
+    height: 45px;
+    position: relative;
+    margin: 10px auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+#event-mobile-nav-trigger span {
+    display: block;
+    position: absolute;
+    height: 6px;
+    width: 80%;
+    background: #e2231a;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .20s ease-in-out;
+    -moz-transition: .20s ease-in-out;
+    -o-transition: .20s ease-in-out;
+    transition: .20s ease-in-out;
+}
+
+#event-mobile-nav-trigger span:nth-child(1) {
+    top: 4px;
+}
+
+#event-mobile-nav-trigger span:nth-child(2),
+#event-mobile-nav-trigger span:nth-child(3) {
+    top: 18px;
+}
+
+#event-mobile-nav-trigger span:nth-child(4) {
+    top: 32px;
+}
+
+#event-mobile-nav-trigger.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#event-mobile-nav-trigger.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#event-mobile-nav-trigger.open span:nth-child(4) {
+    top: 18px;
+    visibility: visible;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#event-mobile-nav-trigger.open span:nth-child(1) {
+    top: 18px;
+    visibility: visible;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/* nav */
+
+#event-mobile-nav-trigger {
+    display: none;
+    text-align: left;
+    float: right;
+    padding: 0.6em;
+}
+
+@media screen and (max-width: 50em) {
+    #event-mobile-nav-trigger {
+        display: block;
+        right: 1em;
+    }
+}
+
+#event-mobile-nav-trigger span {
+    display: inline-block;
+    padding: 0.4em 0.5em 0 0.5em;
+    margin: 0;
+    min-width: 80%;
+    cursor: pointer;
+}
+
+#event-mobile-nav-trigger span i {
+    padding: 0.8em 0 0 0;
+    float: right;
+    display: none;
+    font-size: 1.8em;
+    line-height: 0.2em;
+    min-width: 1.6em;
+}
+
+#event-mobile-nav-trigger span i.menu_state {
+    display: inline-block;
+}
+
+#event-nav-mobile {
+    position: absolute;
+    z-index: 11;
+    left: 0;
+    right: 0;
+    top: 4.0em;
+    display: none;
+}
+
+@media screen and (max-width: 50em) {
+    #event-nav-mobile {
+        display: block;
+    }
+}
+
+#event-nav-mobile ul {
+    display: none;
+    list-style-type: none;
+    width: 100%;
+    height: auto;
+    border-top: 1px #d9d8d6 solid;
+    padding: 0;
+    margin: 0 auto;
+    background: #fff;
+}
+
+#event-nav-mobile ul li {
+    display: block;
+    margin: 0;
+    text-indent: 2.0em;
+    border-bottom: 1px #d9d8d6 solid;
+    padding: 1.2em 0;
+}
+
+#event-nav-mobile ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #e2231a;
+    font-family: 'lato-bold', Helvetica, Arial, sans-serif;
+}
+
+i.fa-caret-down {
+    text-indent: -9999px;
+    background: url("../ca/en/ww-mwc-2017-img-zip/event-menu-down.svg") no-repeat 12px 10px;
+    background-size: 24px 12px;
+    margin: 0 0 0.2em 0;
+}
+
+i.fa-caret-up {
+    text-indent: -9999px;
+    background: url("../ca/en/ww-mwc-2017-img-zip/event-menu-up.svg") no-repeat 12px 10px;
+    background-size: 24px 12px;
+    margin: 0 0 0.2em 0;
+}
+
+
+/*--------------------------------------------------------------------- jedi video banner */
+
+div.moto-player-wrapper {
+    position: absolute;
+    z-index: 9;
+    margin-top: 0em;
+    padding: 0;
+    display: none;
+    width: 100%;
+    height: 980px;
+    background: #000;
+    overflow: hidden;
+    max-width: 120em
+}
+
+@media screen and (max-width: 85em) {
+    div.moto-player-wrapper {
+        height: 800px
+    }
+}
+
+@media screen and (max-width: 76.75em) {
+    div.moto-player-wrapper {
+        height: 600px
+    }
+}
+
+@media screen and (max-width: 50em) {
+    div.moto-player-wrapper {
+        height: 400px
+    }
+}
+
+@media screen and (max-width: 26.25em) {
+    div.moto-player-wrapper {
+        height: 320px
+    }
+}
+
+iframe.moto-player-video-media {
+    display: block;
+    width: 100%;
+    height: 1080px;
+    margin: -64px 0 0 0
+}
+
+@media screen and (max-width: 85em) {
+    iframe.moto-player-video-media {
+        height: 900px;
+        margin: -140px 0 0 0
+    }
+}
+
+@media screen and (max-width: 76.75em) {
+    iframe.moto-player-video-media {
+        height: 700px;
+        margin: -80px 0 0 0
+    }
+}
+
+@media screen and (max-width: 50em) {
+    iframe.moto-player-video-media {
+        height: 300px;
+        margin: 0
+    }
+}
+
+@media screen and (max-width: 26.25em) {
+    iframe.moto-player-video-media {
+        height: 300px
+    }
+}
+
+div.video-modal {
+    display: block
+}
+
+div.moto-player-wrapper a.moto-video-close {
+    position: absolute;
+    background: url("https://static.lenovo.com/ww/events/IFA/red-X.svg") no-repeat center center;
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+    transition: .2s;
+    top: 120px;
+    right: 40px
+}
+
+@media screen and (max-width: 26.25em) {
+    div.moto-player-wrapper a.moto-video-close {
+        top: 0.6em;
+        right: 0.6em;
+        width: 2.0em;
+        height: 2.0em;
+        background-size: 40px 40px
+    }
+}
+
+div.moto-player-wrapper a.moto-video-close:hover {
+    background: url("https://static.lenovo.com/ww/events/IFA/white-X.svg") no-repeat center center;
+    background-size: 50px 50px
+}
+
+
+/*--------------------------------------------------------------------- video banner */
+
+div.event-yt-player-wrapper {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    max-width: 120.0em;
+    height: 945px;
+    background: #000;
+}
+
+@media screen and (max-width: 85em) {
+    div.event-yt-player-wrapper {
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 76.75em) {
+    div.event-yt-player-wrapper {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    div.event-yt-player-wrapper {
+        height: 500px;
+        background: #fff url("https://static.lenovo.com/ww/events/IFA/ifa-banner-mobile-1.jpg") no-repeat center center;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    div.event-yt-player-wrapper {
+        height: 500px;
+    }
+}
+
+div.event-yt-player-wrapper div.banner-txt {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    padding: 1em 0;
+    bottom: 4%;
+    text-align: center;
+}
+
+@media screen and (max-width: 50em) {
+    div.event-yt-player-wrapper div.banner-txt {
+        bottom: 12%;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    div.event-yt-player-wrapper div.banner-txt {
+        bottom: 16%;
+    }
+}
+
+div.event-yt-player-wrapper div.event-yt-player-iframe-wrapper {
+    position: relative;
+    height: 1100px;
+    /* margin-top: -1.8em; */
+}
+
+@media screen and (max-width: 85em) {
+    div.event-yt-player-wrapper div.event-yt-player-iframe-wrapper {
+        height: 800px;
+        margin-top: -1.5em;
+    }
+}
+
+@media screen and (max-width: 76.75em) {
+    div.event-yt-player-wrapper div.event-yt-player-iframe-wrapper {
+        height: 682px;
+        margin-top: -1.3em;
+    }
+}
+
+div.event-yt-player-wrapper div.event-yt-player-iframe-wrapper iframe#event-yt-player {
+    position: absolute;
+    opacity: .8;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+@media screen and (max-width: 50em) {
+    div.event-yt-player-wrapper div.event-yt-player-iframe-wrapper iframe#event-yt-player {
+        display: none;
+    }
+}
+
+div.event-yt-player-wrapper a.scrollerMomma-dropArrow {
+    min-width: 52px;
+    min-height: 26px;
+    background: url("https://static.lenovo.com/ww/events/IFA/white-X.svg") no-repeat top center;
+    background-size: 52px 52px;
+    transition: .2s;
+    display: block;
+    margin: 2.6em 0 0 0;
+}
+
+div.event-yt-player-wrapper a.scrollerMomma-dropArrow:hover {
+    background: url("https://static.lenovo.com/ww/events/IFA/red-X.svg") no-repeat top center;
+    background-size: 52px 52px;
+}
+
+
+/*--------------------------------------------------------------------- intel logo */
+
+div.intel-logo-wrapper-products {
+    position: relative;
+}
+
+div.intel-logo {
+    position: absolute;
+    z-index: 3;
+    max-width: 12.0em;
+    padding: 1em 0;
+    top: 6.2em;
+    right: 1.0em;
+}
+
+@media screen and (max-width: 50em) {
+    div.intel-logo {
+        max-width: 10.0em;
+        padding: 0.5em 0;
+        top: 4.2em;
+        right: 1.2em;
+    }
+}
+
+div.intel-logo-products {
+    top: 0.0em;
+    right: 1.5em;
+    padding: 0;
+}
+
+@media screen and (max-width: 30em) {
+    div.intel-logo-products {
+        top: -1.6em;
+    }
+}
+
+div.intel-logo img {
+    max-width: 5.0em;
+    margin: 0 auto;
+    display: block;
+}
+
+@media screen and (max-width: 50em) {
+    div.intel-logo img {
+        max-width: 4.0em;
+        margin: 0 auto;
+    }
+}
+
+div.intel-logo p {
+    color: #fff;
+    text-align: center;
+    font-size: 1.0em;
+    padding: 0;
+    margin: 0.4em 0;
+}
+
+@media screen and (max-width: 50em) {
+    div.intel-logo p {
+        font-size: 0.8em;
+        line-height: 1.35em;
+        margin: 0.1em 0;
+    }
+}
+
+div.intel-logo p.intel-logo-text-k {
+    color: #000;
+    font-size: 0.8em;
+}
+
+div.intel-logo p sup {
+    font-size: 0.8em;
+}
+
+
+/*--------------------------------------------------------------------- product rows */
+
+div.event-body-content-wrapper {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.event-body-content-wrapper::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+div.event-body-content-wrapper div.event-body-content-container {
+    width: 100%;
+}
+
+div.event-body-content-wrapper div.event-body-content-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+div.event-body-content-wrapper div.event-body-content-container div.event-product-row {
+    position: relative;
+}
+
+div.event-body-content-wrapper div.event-body-content-container div.event-product-row div.event-product-row-copy {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    max-width: 50%;
+    margin: 0 0 0 4.8em;
+}
+
+@media screen and (max-width: 50em) {
+    div.event-body-content-wrapper div.event-body-content-container div.event-product-row div.event-product-row-copy {
+        margin: 0;
+        max-width: 100%;
+        padding: 4.0em 2.0em;
+        top: auto;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    div.event-body-content-wrapper div.event-body-content-container div.event-product-row div.event-product-row-copy {
+        margin: 0;
+        max-width: 100%;
+        padding: 2.0em 1.6em;
+    }
+}
+
+div.event-body-content-wrapper div.event-body-content-container div.event-product-row div.event-product-row-copy-mw {
+    background: none;
+}
+
+@media screen and (max-width: 50em) {
+    div.event-body-content-wrapper div.event-body-content-container div.event-product-row div.event-product-row-copy-mw {
+        background: rgba(255, 255, 255, 0.7);
+    }
+}
+
+div.event-body-content-wrapper div.event-body-content-container div.event-product-row-full {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 100%;
+    margin-right: 0;
+    overflow: hidden;
+}
+
+div.event-body-content-wrapper div.event-body-content-container div.event-product-row-full:last-child {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 50em) {
+    div.event-body-content-wrapper div.event-body-content-container div.event-product-row-full {
+        min-height: 400px;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    div.event-body-content-wrapper div.event-body-content-container div.event-product-row-full {
+        min-height: 280px;
+    }
+}
+
+@media screen and (max-width: 22.5em) {
+    div.event-body-content-wrapper div.event-body-content-container div.event-product-row-full {
+        min-height: 280px;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    div.event-body-content-wrapper div.event-body-content-container div.event-product-row-full img {
+        width: 48.0em;
+        height: auto;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    img.event-product-row-logo {
+        width: 60%!important;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    div.event-body-content-wrapper div.event-body-content-container div.event-product-row-full img {
+        width: 35.0em;
+    }
+}
+
+@media screen and (max-width: 22.5em) {
+    div.event-body-content-wrapper div.event-body-content-container div.event-product-row-full img {
+        width: 35em;
+    }
+}
+
+div.event-body-content-wrapper div.event-body-content-container div.event-product-row-full div.event-product-row-copy p {
+    max-width: 60%;
+}
+
+@media screen and (max-width: 30em) {
+    div.event-body-content-wrapper div.event-body-content-container div.event-product-row-full div.event-product-row-copy p {
+        max-width: 90%;
+    }
+}
+
+div.event-body-content-wrapper div.event-body-content-container div.event-product-row-half {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 50%;
+    margin-right: 0;
+    overflow: hidden;
+}
+
+div.event-body-content-wrapper div.event-body-content-container div.event-product-row-half:last-child {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 50em) {
+    div.event-body-content-wrapper div.event-body-content-container div.event-product-row-half {
+        float: left;
+        display: block;
+        margin-right: 0%;
+        width: 100%;
+    }
+    div.event-body-content-wrapper div.event-body-content-container div.event-product-row-half:last-child {
+        margin-right: 0;
+    }
+}
+
+div.event-body-content-wrapper div.event-body-content-container div.event-product-row-quarter {
+    border-right: 1px solid #d9d8d6;
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 25%;
+    margin-right: 0;
+}
+
+div.event-body-content-wrapper div.event-body-content-container div.event-product-row-quarter:last-child {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 50em) {
+    div.event-body-content-wrapper div.event-body-content-container div.event-product-row-quarter {
+        float: left;
+        display: block;
+        margin-right: 0%;
+        width: 50%;
+    }
+    div.event-body-content-wrapper div.event-body-content-container div.event-product-row-quarter:last-child {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    div.event-body-content-wrapper div.event-body-content-container div.event-product-row-quarter {
+        float: left;
+        display: block;
+        margin-right: 0%;
+        width: 100%;
+    }
+    div.event-body-content-wrapper div.event-body-content-container div.event-product-row-quarter:last-child {
+        margin-right: 0;
+    }
+}
+
+div.event-body-content-wrapper div.event-body-content-container div.event-product-row-quarter:nth-child(7) {
+    border-right: none;
+}
+
+div.event-body-content-wrapper div.event-body-content-container div.second-tier div.second-tier-img {
+    position: relative;
+    overflow: hidden;
+    height: 30.0em;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 85em) {
+    div.event-body-content-wrapper div.event-body-content-container div.second-tier div.second-tier-img {
+        height: 20.0em;
+    }
+}
+
+@media screen and (max-width: 76.75em) {
+    div.event-body-content-wrapper div.event-body-content-container div.second-tier div.second-tier-img {
+        height: 16.0em;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    div.event-body-content-wrapper div.event-body-content-container div.second-tier div.second-tier-img {
+        height: 22.0em;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    div.event-body-content-wrapper div.event-body-content-container div.second-tier div.second-tier-img {
+        height: 20.0em;
+    }
+}
+
+div.event-body-content-wrapper div.event-body-content-container div.second-tier div.second-tier-img img {
+    position: absolute;
+}
+
+div.event-body-content-wrapper div.event-body-content-container div.second-tier div.second-tier-img img:nth-child(1) {
+    left: 0;
+}
+
+div.event-body-content-wrapper div.event-body-content-container div.second-tier div.second-tier-img img:nth-child(2) {
+    left: 100%;
+}
+
+div.event-body-content-wrapper div.event-body-content-container div.second-tier-copy {
+    /*position: absolute;*/
+    z-index: 2;
+    bottom: 0;
+    width: 100%;
+    background: #f8f8f8;
+    padding: 0.4em 0;
+}
+
+div.event-body-content-wrapper div.event-body-content-container div.event-youtube-playlists {
+    padding: 5.0em 5.25em;
+    min-height: 40.0em;
+}
+
+@media screen and (max-width: 76.75em) {
+    div.event-body-content-wrapper div.event-body-content-container div.event-youtube-playlists {
+        padding: 2.4em 1.2em;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    div.event-body-content-wrapper div.event-body-content-container div.event-youtube-playlists {
+        padding: 2.4em 0.6em;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    div.event-body-content-wrapper div.event-body-content-container div.event-youtube-playlists {
+        padding: 2.4em 0;
+    }
+}
+
+div.event-body-content-wrapper div.event-body-content-container div.event-stackla-feed {
+    padding: 5.0em 5.25em;
+    min-height: 40.0em;
+}
+
+@media screen and (max-width: 76.75em) {
+    div.event-body-content-wrapper div.event-body-content-container div.event-stackla-feed {
+        padding: 2.4em 1.2em;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    div.event-body-content-wrapper div.event-body-content-container div.event-stackla-feed {
+        padding: 2.4em 0.6em;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    div.event-body-content-wrapper div.event-body-content-container div.event-stackla-feed {
+        padding: 2.4em 0;
+    }
+}
+
+
+/*--------------------------------------------------------------------- footer row */
+
+div.event-footer-wrapper {
+    max-width: 120em;
+    margin: -6.8em 0 0 0;
+    padding: 2.8em 0;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+}
+
+@media screen and (max-width: 76.75em) {
+    div.event-footer-wrapper {
+        margin: -4.6em 0 0 0;
+    }
+}
+
+div.event-footer-wrapper-products {
+    margin: 0;
+}
+
+div.event-footer-wrapper div.event-footer-row-full {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 100%;
+}
+
+div.event-footer-wrapper div.event-footer-row-full:last-child {
+    margin-right: 0;
+}
+
+div.event-footer-wrapper div.event-footer-row-full a {
+    color: #cdcdcd;
+    text-decoration: none;
+    transition: .2s;
+}
+
+div.event-footer-wrapper div.event-footer-row-full a:hover {
+    color: #e2231a;
+}
+
+div.event-footer-wrapper div.event-footer-row-full p a.footer-L-link {
+    background-color: #cdcdcd;
+    padding: 0.6em 0 0.3em 0;
+    max-width: 2.8em;
+    margin: 0 auto 1.2em auto;
+    display: block;
+    transition: .2s;
+}
+
+div.event-footer-wrapper div.event-footer-row-full p a.footer-L-link:hover {
+    background-color: #e2231a;
+}
+
+div.event-footer-wrapper div.event-footer-row-full p a.footer-L-link img {
+    max-height: 1.2em;
+    max-width: 0.8em;
+}
+
+div.event-footer-wrapper div.event-footer-row-full p {
+    text-align: center;
+    color: #242424;
+    margin: 0;
+    padding: 1.2em 0.2em;
+    font-size: 0.8em;
+    line-height: 2.0em;
+}
+
+@media screen and (max-width: 30em) {
+    div.event-footer-wrapper div.event-footer-row-full p {
+        font-size: 0.7em;
+        line-height: 1.6em;
+    }
+}
+
+div.event-footer-wrapper div.event-footer-row-full p a span {
+    font-family: 'lato-black', Helvetica, Arial, sans-serif;
+    letter-spacing: 0.05em;
+}
+
+
+/* section logos */
+
+img.event-product-row-logo {
+    margin: 0 0 .5em 0;
+    float: none !important;
+}
+
+
+/* right copy placement */
+
+@media screen and (min-width: 50em) {
+    .event-product-row-copy.row-copy-right {
+        right: 12em;
+        padding-left: 10em;
+    }
+}
+
+
+/*--------------------------------------------------------------------- modal */
+
+
+/*adjustments for the multiple modal shop buttons*/
+
+.event-product-modal-copy a:nth-child(4),
+.event-product-modal-copy a:nth-child(7) {
+    margin-left: 1em;
+}
+
+.event-product-modal-copy a:nth-child(4),
+.event-product-modal-copy a:nth-child(6),
+.event-product-modal-copy a:nth-child(7),
+.event-product-modal-copy a:nth-child(8),
+.event-product-modal-copy a:nth-child(9) {
+    margin-top: 1em;
+    display: inline-block;
+}
+
+
+/* end adjustments for multiple buttons */
+
+div.event-product-modal-wrapper {
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: none;
+    top: 0;
+    bottom: 0;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+}
+
+div.event-product-modal-wrapper::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.view-modal {
+    display: block !important;
+}
+
+div.event-product-modal-wrapper a.event-modal-close {
+    position: absolute;
+    top: 320px;
+    z-index: 20;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 2.0em;
+    font-size: 1.8em;
+    width: 1.8em;
+    height: 1.8em;
+    background: #fff url("https://static.lenovo.com/ww/events/IFA/red-X.svg") no-repeat center center;
+    background-size: 40px 40px;
+    transition: .2s;
+    margin-top: -6.0em;
+}
+
+@media screen and (max-width: 50em) {
+    div.event-product-modal-wrapper a.event-modal-close {
+        position: fixed;
+        top: 9.0em;
+        right: 1.0em;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    div.event-product-modal-wrapper a.event-modal-close {
+        width: 1.2em;
+        height: 1.2em;
+        background-size: 30px 30px;
+    }
+}
+
+div.event-product-modal-wrapper a.event-modal-close:hover {
+    background: #e2231a url("https://static.lenovo.com/ww/events/IFA/white-X.svg") no-repeat center center;
+    background-size: 40px 40px;
+}
+
+div.event-product-modal-wrapper section.event-product-modal {
+    display: none;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+@media screen and (max-width: 50em) {
+    div.event-product-modal-wrapper section.event-product-modal {
+        overflow-y: scroll;
+        height: 100%;
+    }
+}
+
+div.event-product-modal-wrapper section.modal-product-pop {
+    display: block;
+}
+
+div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-row {
+    padding: 1em;
+}
+
+@media screen and (max-width: 50em) {
+    div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-row {
+        position: static;
+    }
+}
+
+div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-half {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 50%;
+    margin-right: 0;
+}
+
+div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-half:last-child {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 50em) {
+    div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-half {
+        float: left;
+        display: block;
+        margin-right: 0%;
+        width: 100%;
+    }
+    div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-half:last-child {
+        margin-right: 0;
+    }
+}
+
+div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-half div.event-modal-slider {
+    position: relative;
+    font-size: 2.4em;
+}
+
+@media screen and (max-width: 50em) {
+    div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-half div.event-modal-slider {
+        font-size: 3.6em;
+        padding-top: 44%;
+    }
+}
+
+div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-half div.event-modal-slider img {
+    width: 85%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0;
+    right: 2.0em;
+    z-index: -99;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+@media screen and (max-width: 85em) {
+    div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-half div.event-modal-slider img {
+        width: 80%;
+        right: 1.0em;
+    }
+}
+
+@media screen and (max-width: 76.75em) {
+    div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-half div.event-modal-slider img {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-half div.event-modal-slider img {
+        top: 0;
+        right: auto;
+        left: 0;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-half div.event-modal-slider img {
+        top: 32px;
+    }
+}
+
+div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-half div.event-modal-slider img.view-modal-img {
+    opacity: 1;
+}
+
+div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-half div.event-product-modal-copy {
+    margin: 0 12.0em 0 6.0em;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@media screen and (max-width: 85em) {
+    div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-half div.event-product-modal-copy {
+        margin: 0 1.0em;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-half div.event-product-modal-copy {
+        margin: 54% 10% 0 10%;
+        position: static;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-half div.event-product-modal-copy {
+        margin: 60% 2% 0 2%;
+    }
+    /*for long text extra buttons*/
+    .event-product-modal-copy.long {
+        margin: 80% 2% 0 2% !important;
+    }
+}
+
+div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-half div.event-modal-nav {
+    width: 20px;
+    height: 40px;
+    background: #fff url("https://static.lenovo.com/ww/events/IFA/red-X.svg") no-repeat;
+    background-size: 40px 40px;
+    border: 6px #fff solid;
+    box-sizing: content-box;
+    cursor: pointer;
+    transition: .3s;
+    display: none;
+}
+
+div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-half div.event-modal-nav:hover {
+    background: #e2231a url("https://static.lenovo.com/ww/events/IFA/white-X.svg") no-repeat;
+    width: 20px;
+    height: 40px;
+    background-size: 40px 40px;
+    border: 6px #e2231a solid;
+}
+
+div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-half div.event-modal-nav-left {
+    float: left;
+    background-position: -20px 0px;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 50em) {
+    div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-half div.event-modal-nav-left {
+        margin: 45% 0 0 0;
+    }
+}
+
+div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-half div.event-modal-nav-left:hover {
+    background-position: -20px 0px;
+}
+
+div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-half div.event-modal-nav-right {
+    float: right;
+    visibility: hidden;
+}
+
+
+/* test for 2 images */
+
+div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-half div.event-modal-nav-left2 {
+    float: left;
+    background-position: -20px 0px;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 50em) {
+    div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-half div.event-modal-nav-left2 {
+        margin: 45% 0 0 0;
+    }
+}
+
+div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-half div.event-modal-nav-left2:hover {
+    background-position: -20px 0px;
+}
+
+div.event-product-modal-wrapper section.event-product-modal div.event-product-modal-half div.event-modal-nav-right2 {
+    float: right;
+    visibility: hidden;
+}
+
+
+/*--------------------------------------------------------------------- YT video overlay */
+
+div.yt-event-video-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 12;
+    border: 0;
+    text-align: center;
+    display: none;
+}
+
+div.yt-event-video-overlay iframe {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    border: 0;
+    margin: 0 auto;
+}
+
+div.yt-event-video-overlay a.event-YT-video-close {
+    position: absolute;
+    top: 3.6em;
+    right: 2.0em;
+    font-size: 1.8em;
+    width: 1.8em;
+    height: 1.8em;
+    background: #000 url("https://static.lenovo.com/ww/events/IFA/red-X.svg") no-repeat center center;
+    background-size: 40px 40px;
+    transition: .2s;
+}
+
+@media screen and (max-width: 30em) {
+    div.yt-event-video-overlay a.event-YT-video-close {
+        position: fixed;
+        top: 2.8em;
+        right: 0.6em;
+        width: 1.2em;
+        height: 1.2em;
+        background-size: 30px 30px;
+    }
+}
+
+div.yt-event-video-overlay a.event-YT-video-close:hover {
+    background: #e2231a url("https://static.lenovo.com/ww/events/IFA/black-X.svg") no-repeat center center;
+    background-size: 40px 40px;
+}
+
+
+/*--------------------------------------------------------------------- YT parse grid mobile */
+
+@media screen and (max-width: 85em) {
+    ul.yprVideoGrid li {
+        min-width: 50%;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    ul.yprVideoGrid li {
+        float: none;
+        min-width: 100%;
+    }
+}
+
+
+/*--------------------------------------------------------------------- banner video overlay */
+
+
+/*fix top spacing*/
+
+video.video-stream.html5-main-video {
+    top: 0 !important;
+}
+
+div.banner-player-wrapper {
+    position: absolute;
+    z-index: 9;
+    margin-top: 0em;
+    padding: 0;
+    display: none;
+    width: 100%;
+    height: 980px;
+    background: #000;
+    overflow: hidden;
+    max-width: 120em;
+}
+
+@media screen and (max-width: 85em) {
+    div.banner-player-wrapper {
+        height: 800px;
+    }
+}
+
+@media screen and (max-width: 76.75em) {
+    div.banner-player-wrapper {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    div.banner-player-wrapper {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    div.banner-player-wrapper {
+        height: 500px;
+    }
+}
+
+iframe.banner-player-video-media {
+    display: block;
+    width: 100%;
+    height: 1080px;
+    margin: -108px 0 0 0;
+}
+
+@media screen and (max-width: 85em) {
+    iframe.banner-player-video-media {
+        height: 900px;
+        margin: -140px 0 0 0;
+        /*had 0 for all */
+    }
+}
+
+@media screen and (max-width: 76.75em) {
+    iframe.banner-player-video-media {
+        height: 700px;
+        margin: -80px 0 0 0;
+        /* had 0 for all */
+    }
+}
+
+@media screen and (max-width: 50em) {
+    iframe.banner-player-video-media {
+        height: 300px;
+        /*had 460px*/
+        margin: 0;
+        /*had 36px in top*/
+    }
+}
+
+@media screen and (max-width: 30em) {
+    iframe.banner-player-video-media {
+        height: 300px;
+        /*had 460px*/
+        margin: 0;
+        /*had 36px in top*/
+    }
+}
+
+div.video-modal {
+    display: block;
+}
+
+div.banner-player-wrapper a.banner-video-close {
+    position: absolute;
+    background: url("https://static.lenovo.com/ww/events/IFA/red-X.svg") no-repeat center center;
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+    transition: .2s;
+    top: 120px;
+    right: 40px;
+}
+
+@media screen and (max-width: 50em) {
+    div.banner-player-wrapper a.banner-video-close {
+        top: 80px;
+        right: 20px;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    div.banner-player-wrapper a.banner-video-close {
+        width: 2.0em;
+        height: 2.0em;
+        background-size: 40px 40px;
+    }
+}
+
+div.banner-player-wrapper a.banner-video-close:hover {
+    background: url("https://static.lenovo.com/ww/events/IFA/white-X.svg") no-repeat center center;
+    background-size: 50px 50px;
+}
+
+
+/* Events pages */
+
+div.event-prebuzz-yt-player-wrapper {
+    position: fixed;
+    overflow: hidden;
+    z-index: -99;
+    width: 100%;
+    height: 100%;
+    background: #e6d20b;
+}
+
+div.event-prebuzz-yt-player-wrapper iframe#event-prebuzz-yt-player {
+    position: absolute;
+    overflow: hidden;
+    opacity: .3;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    min-width: 160%;
+    min-height: 160%;
+}
+
+@media screen and (max-width: 120em) {
+    div.event-prebuzz-yt-player-wrapper iframe#event-prebuzz-yt-player {
+        min-width: 120%;
+        min-height: 120%;
+    }
+}
+
+@media screen and (max-width: 85em) {
+    div.event-prebuzz-yt-player-wrapper iframe#event-prebuzz-yt-player {
+        margin-top: -10%;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    div.event-prebuzz-yt-player-wrapper iframe#event-prebuzz-yt-player {
+        display: none;
+    }
+}
+
+div.pre-buzz-content {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    padding: 1em 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+div.pre-buzz-logo img {
+    max-width: 326px;
+    margin: 0;
+}
+
+span.countdown_section {
+    display: inline-block;
+    margin: 0;
+    text-transform: uppercase;
+    max-height: 4.5em;
+    overflow: hidden;
+}
+
+span.countdown_section .countdown_amount:before {
+    content: ':';
+}
+
+span.countdown_section:first-child span.countdown_amount:before {
+    content: '';
+}
+
+
+/* products page styles */
+
+div.event-body-content-wrapper div.event-body-content-container-products {
+    max-width: 100.0em;
+    margin: 6.2em auto 0 auto;
+}
+
+div.event-body-content-wrapper div.event-body-content-container-products h1 {
+    text-align: center;
+    font-family: 'lato-bold', Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 3.6em 0 1.2em 0;
+    background: #fff;
+    width: 16.0em;
+}
+
+@media screen and (max-width: 50em) {
+    div.event-body-content-wrapper div.event-body-content-container-products h1 {
+        text-align: left;
+        width: 64%;
+        margin: 0 0 0 1.2em;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    div.event-body-content-wrapper div.event-body-content-container-products h1 {
+        font-size: 1.0em;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 9.6em 0 0.0em 0;
+    }
+}
+
+hr.events-headline-hr {
+    width: 56%;
+    max-width: 60.0em;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: -99;
+    top: 11.1em;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 50em) {
+    hr.events-headline-hr {
+        display: none;
+    }
+}
+
+div.event-body-content-wrapper div.event-body-content-container-products div.product-tier {
+    border: none;
+    padding: 1.5em;
+    margin: 1.2em 0 0 0;
+}
+
+div.event-body-content-wrapper div.event-body-content-container-products div.product-tier div.product-tier-img {
+    border: none;
+    background: #cdcdcd;
+    cursor: pointer;
+}
+
+div.event-body-content-wrapper div.event-body-content-container-products div.product-tier div.product-tier-img img {
+    opacity: .8;
+}
+
+div.event-body-content-wrapper div.event-body-content-container-products div.product-tier div.product-tier-copy p {
+    text-align: center;
+    font-family: 'lato-regular', Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    letter-spacing: 0.01em;
+    margin: 0;
+    padding: 1.2em 0;
+    background: none;
+}
+
+a.second-tier-eventButton {
+    position: absolute;
+    z-index: 3;
+    bottom: 10.0em;
+    right: 2.8em;
+    opacity: 0;
+    width: 2.6em;
+    height: 2.6em;
+    border-radius: 1.3em;
+    border: 0px solid #fff;
+    background: #e2231a url("../ca/en/ww-mwc-2017-img-zip/events-plus.svg") no-repeat center center;
+    background-size: 20px 20px;
+    -ms-transform: scale(0.4, 0.4);
+    /* IE 9 */
+    -webkit-transform: scale(0.4, 0.4);
+    /* Safari */
+    transform: scale(0.4, 0.4);
+}
+
+@media screen and (max-width: 30em) {
+    a.second-tier-eventButton {
+        position: static;
+    }
+}
+
+
+/* YT Playlist */
+
+div.yt-playlist-grid {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.yt-playlist-grid::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+div.yt-playlist-grid div.yt-playlist-grid-element {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 25%;
+    margin-right: 0;
+    overflow: hidden;
+}
+
+div.yt-playlist-grid div.yt-playlist-grid-element:last-child {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 50em) {
+    div.yt-playlist-grid div.yt-playlist-grid-element {
+        float: left;
+        display: block;
+        margin-right: 0%;
+        width: 100%;
+    }
+    div.yt-playlist-grid div.yt-playlist-grid-element:last-child {
+        margin-right: 0;
+    }
+}
+
+div.playSelectedBtn {
+    width: auto;
+    display: inline-block;
+}
+
+a.eventytplaylistselected {
+    margin: 0.8em 0.4em 1.2em;
+}
+
+a.eventYTplaylist {
+    margin: 0.8em 0.4em 1.2em;
+}
+
+a.eventytplaylistselected:hover {
+    color: #e2231a;
+    background: #000;
+}
+
+a.eventYTplaylist:hover {
+    color: #e2231a;
+    background: #000;
+}
+
+div.yt-event-playlist-overlay {
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+    background: #000;
+    width: 100%;
+    height: auto;
+}
+
+div.wrapper {
+    margin: 0 6.8em;
+    height: auto;
+}
+
+@media screen and (max-width: 76.75em) {
+    div.wrapper {
+        margin: 0;
+    }
+}
+
+a.event-YT-video-close {
+    display: none;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    z-index: 20;
+    width: 60px;
+    height: 60px;
+    background: #000 url("https://static.lenovo.com/ww/events/IFA/red-X.svg") no-repeat center center;
+    background-size: 64px 64px;
+    transition: .2s;
+}
+
+@media screen and (max-width: 76.75em) {
+    a.event-YT-video-close {
+        width: 30px;
+        height: 30px;
+        background-size: 32px 32px;
+        background: url("https://static.lenovo.com/ww/events/IFA/red-X.svg") no-repeat center center;
+    }
+}
+
+a.event-YT-video-close:hover {
+    background: #e2231a url("https://static.lenovo.com/ww/events/IFA/black-X.svg") no-repeat center center;
+    background-size: 60px 60px;
+}
+
+@media screen and (max-width: 76.75em) {
+    a.event-YT-video-close:hover {
+        background: url("https://static.lenovo.com/ww/events/IFA/black-X.svg") no-repeat center center;
+        background-size: 32px 32px;
+    }
+}
+
+.RYPP-video {
+    padding-top: 61.2%;
+}
+
+@media screen and (max-width: 120em) {
+    .RYPP-video {
+        padding-top: 61.2%;
+    }
+}
+
+@media screen and (max-width: 85em) {
+    .RYPP-video {
+        padding-top: 82%;
+    }
+}
+
+@media screen and (max-width: 76.75em) {
+    .RYPP-video {
+        padding-top: 72.2%;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    .RYPP-video {
+        padding-top: 100%;
+    }
+}
+
+
+/* from Mentorware */
+
+.l_orange {
+    background: #ff6a00;
+}
+
+.video_tabs {
+    text-align: left;
+}
+
+.txtEllipsis h5 {
+    font-family: 'lato-bold', Helvetica, Arial, sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    padding: 1.2em 0.4em 0 0.4em;
+    margin: 0;
+    height: 60px;
+}
+
+@media screen and (max-width: 76.75em) {
+    .txtEllipsis h5 {
+        height: 90px;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    .txtEllipsis h5 {
+        height: 60px;
+    }
+}
+
+.cardCont {
+    border: 16px solid white;
+    border-top-width: 10px;
+    border-bottom-width: 12px;
+}
+
+@media screen and (max-width: 50em) {
+    .cardCont {
+        border: 4px solid white;
+        border-top-width: 4px;
+        border-bottom-width: 4px;
+    }
+}
+
+.cardborderOrange {
+    border-color: #fff;
+    background: #e2231a;
+}
+
+@media screen and (max-width: 50em) {
+    .cardborderOrange {
+        border-color: #e2231a;
+        background: #e2231a;
+    }
+}
+
+.cardCont img {
+    opacity: 1;
+    transition: .2s;
+}
+
+@media screen and (max-width: 50em) {
+    .cardCont img {
+        float: none !important;
+    }
+}
+
+.cardCont img:hover {
+    opacity: 0.5;
+}
+
+.button_outline {
+    padding: 0.2em 0.8em;
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid #3e8ddd;
+    color: #3e8ddd;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-family: 'lato-regular', Helvetica, Arial, sans-serif;
+    cursor: pointer;
+    font-size: 1.2em;
+    outline: none;
+}
+
+.button_outline:hover {
+    border: 2px solid #4ac0e0;
+    background: #4ac0e0;
+    color: #fff;
+}
+
+.fa-2 {
+    font-size: 1em;
+    margin-right: 6px;
+}
+
+.sCount {
+    display: none;
+}
+
+.contYoutube {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.RYPP {
+    /* Youtube Player With Playlist */
+    width: 100%;
+    position: relative;
+    padding-right: 250px;
+    background: #1a1a1a;
+    overflow: hidden;
+    font: 400 14px/120% "lato-regular", Helvetica, Arial, sans-serif;
+    color: #999;
+}
+
+.RYPP .RYPP-video {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.RYPP .RYPP-video>iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.RYPP .RYPP-items {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 64px;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+.RYPP .RYPP-playlist {
+    width: 250px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #222;
+}
+
+.RYPP .RYPP-playlist a {
+    color: #999;
+}
+
+.RYPP .RYPP-playlist a:hover {
+    color: #fff;
+}
+
+.RYPP .RYPP-playlist>header {
+    width: 100%;
+    height: 64px;
+    padding: 16px 0 0 8px;
+    background: #222;
+    border-left: 8px solid #222;
+    border-right: 8px solid #222;
+    border-bottom: 1px solid #3a3a3a;
+    z-index: 2;
+}
+
+.RYPP .RYPP-playlist>header ._h1 {
+    margin: 0 0 4px 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.RYPP .RYPP-playlist>header p {
+    margin: 0;
+    padding: 0;
+}
+
+.RYPP .RYPP-playlist ol {
+    padding: 0 0 16px 0;
+    margin: 0;
+    list-style: none;
+    counter-reset: item;
+}
+
+.RYPP .RYPP-playlist ol li {
+    position: relative;
+    vertical-align: middle;
+    overflow: hidden;
+    padding: 12px 0 12px 12px;
+}
+
+.RYPP .RYPP-playlist ol li>img {
+    width: 18%;
+    display: inline-block;
+    vertical-align: middle;
+    border: 2px solid transparent;
+}
+
+.RYPP .RYPP-playlist ol li>p {
+    width: 76%;
+    margin: 0;
+    padding: 0 16px 0 0;
+    float: right;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    color: #cacaca;
+}
+
+.RYPP .RYPP-playlist ol li>p>small {
+    margin: 0;
+    padding: 0;
+    font-size: 80%;
+}
+
+.RYPP .RYPP-playlist ol li:hover {
+    background-color: #3a3a3a;
+    cursor: pointer;
+}
+
+.RYPP .RYPP-playlist ol li.selected {
+    background-color: #3a3a3a;
+    cursor: pointer;
+}
+
+.RYPP .RYPP-playlist ol li.selected>p {
+    color: #fff;
+}
+
+.RYPP .RYPP-playlist ol li.selected>img {
+    border: 2px solid #c03636;
+}
+
+.RYPP .RYPP-playlist ol li.selected:before {
+    content: 'Γû╢';
+    font-size: 10px;
+    color: #c03636;
+}
+
+.RYPP .RYPP-playlist ol li:before {
+    counter-increment: item;
+    content: counter(item);
+    font-size: 80%;
+}
+
+.RYPP-items::-webkit-scrollbar {
+    width: 6px;
+    background: #3a3a3a;
+}
+
+.RYPP-items::-webkit-scrollbar-thumb {
+    background: #999;
+}
+
+@media only screen and (max-width: 800px) {
+    .RYPP {
+        padding-right: 0;
+    }
+    .RYPP .RYPP-playlist {
+        width: 100%;
+        position: static;
+        float: left;
+    }
+    .RYPP .RYPP-playlist .RYPP-items {
+        position: static;
+        max-height: 350px;
+        overflow: auto;
+    }
+}
+
+
+/*# sourceMappingURL=mwc-events-2017.css.map */
